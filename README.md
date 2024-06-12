@@ -15,3 +15,11 @@ class clojure.lang.Var$Unbound cannot be cast to class java.lang.ClassLoader (cl
 ```
 
 This may not be reproducible every time as it depends on the reflective overload matching the Function case and not the Map case (the passed arg implements both).
+
+If you've `mvn clean install`'ed a new version of Clojure locally, this should use it and work:
+
+```
+$ clj -M:run:dev
+function 1
+```
+
